@@ -4,8 +4,8 @@
     return keys.every((key) => key in obj);
   }
 
-  const person = { name: "mustakim", age: 20, email: "practice@go.com" };
-  console.log(validateKeys(person, ["name", "age"]));
+  // const person = { name: "mustakim", age: 20, email: "practice@go.com" };
+  // console.log(validateKeys(person, ["name", "age"]));
 
   //
 }
