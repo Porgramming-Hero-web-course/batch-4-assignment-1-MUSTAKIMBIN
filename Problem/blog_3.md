@@ -7,7 +7,7 @@ Hello! Next level developer. Hope you all are donig well. Today we will discuss 
 Type Guards is very powerful feature in TypeScript. It allow us to  runtime type checks and narrow down the type of a variable within a specific code block. So we can ensure type safety and prevents potential runtime errors. Sounds good? yea!!
 
 ###### Let's see an example
-`
+```
  type Circle = {
     shape: string;
     radius: number;
@@ -26,7 +26,8 @@ Type Guards is very powerful feature in TypeScript. It allow us to  runtime type
      else if (shape.shape === "rectangle") {
       return (shape as Rectangle).width * (shape as Rectangle).height;
     }
-  }`
+  }
+  ```
 
 The calculateShapeArea function take's union type and check if the shape property value is equal "circle" then execute the next block of code. If not go to the else if block and check the shape property value is equal "rectangle" then execute teh next block of code. 
 
