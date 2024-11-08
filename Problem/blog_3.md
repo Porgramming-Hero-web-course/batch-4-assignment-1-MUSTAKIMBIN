@@ -39,6 +39,44 @@ Here we ensure the type. This is called Type Guards.
 - It makes code more self-explanatory and easier to understand.
 - Allows you to write more precise and flexible code.
 
+#### typeof Guard
+
+It checks the type of a variable at runtime. For use this Guard you have to use typeof keyward in your code. It check the type of any variable.
+
+```
+function printType(value: string | number) {
+    if (typeof value === 'string') {
+        console.log(`Value is a string: ${value}`);
+    } else {
+        console.log(`Value is a number: ${value}`);
+    }
+}
+
+```
+In the printType function if block check the type of the value is it "string" then executed the next block of code. Nithe go to the else block.
+
+#### instanceof Guard
+ Imagine you have a box of animals. Some are dogs, and others are cats. You want to know if an animal is a dog. You can check if it has four legs and barks. This is similar to how an instanceof guard works
+```
+class Animal {
+    name: string;
+}
+
+class Dog extends Animal {
+    breed: string;
+}
+
+function makeSound(animal: Animal) {
+    if (animal instanceof Dog) {
+        console.log('Woof!');
+    } else {
+        console.log(' animal sound');
+    }
+}
+```
+###### And also custom Guard that we see in our first block of code in this blog
+
+I hope you enjoy this blog. It's all for today. I'll see you in the next one 😃.
 
 
 
